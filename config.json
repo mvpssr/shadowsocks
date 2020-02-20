@@ -16,9 +16,9 @@
     "speed_limit_per_con": 0,
 
     "dns_ipv6": false,
-    "connect_verbose_info": 0,
+    "connect_verbose_info": ${CONNECT_VERBOSE_INFO},
     "connect_hex_data": 0,
     "redirect": "",
-    "fast_open": true,
+    "fast_open": ${FAST_OPEN},
     "friendly_detect": 1
 }
