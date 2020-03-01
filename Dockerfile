@@ -20,7 +20,7 @@ ENV NODE_ID=0                     \
     MYSQL_DB=shadowsocks          \
     REDIRECT=github.com           \
     CONNECT_VERBOSE_INFO=0        \
-    FAST_OPEN=false				  \
+    FAST_OPEN=false		  \
 	PORT_OFFSET=True
 
 COPY . /root/shadowsocks
