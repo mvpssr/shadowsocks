@@ -4,7 +4,7 @@ MAINTAINER FAN VINGA<fanalcest@gmail.com>
 ENV NODE_ID=0                     \
     DNS_1=1.0.0.1                 \
     DNS_2=8.8.8.8                 \
-    SPEEDTEST=0                   \
+    SPEEDTEST=6                   \
     CLOUDSAFE=0                   \
     AUTOEXEC=0                    \
     ANTISSATTACK=0                \
@@ -20,7 +20,8 @@ ENV NODE_ID=0                     \
     MYSQL_DB=shadowsocks          \
     REDIRECT=github.com           \
     CONNECT_VERBOSE_INFO=0        \
-    FAST_OPEN=false
+    FAST_OPEN=false				  \
+	PORT_OFFSET=True
 
 COPY . /root/shadowsocks
 WORKDIR /root/shadowsocks

@@ -28,6 +28,9 @@ CentOS:
 ### Python3 TurnKey Install
 请参见 https://wiki.sspanel.host/#/onekey-install-for-node
 
+### 后端端口自动偏移
+设置单端口偏移请在节点描述最后加"#偏移值",正加负减，只支持数据库对接的偏移
+
 License
 -------
 
