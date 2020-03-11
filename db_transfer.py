@@ -427,7 +427,7 @@ class DbTransfer(object):
         return update_transfer
 
     def get_port_by_offset(self, port, reverse=False):
-        if self.api_config.GET_PORT_OFFSET_BY_NODE_NAME is False or self.port_offset == 0:
+        if self.api_config.GET_PORT_OFFSET_BY_NODE_INFO is False or self.port_offset == 0:
             return port
         return port + self.port_offset
 
@@ -528,7 +528,7 @@ class DbTransfer(object):
         cur = conn.cursor()
 
         cur.execute(
-            "SELECT `node_group`,`node_class`,`node_speedlimit`,`traffic_rate`,`mu_only`,`sort`,`name` FROM ss_node where `id`='"
+            "SELECT `node_group`,`node_class`,`node_speedlimit`,`traffic_rate`,`mu_only`,`sort`,`info` FROM ss_node where `id`='"
             + str(self.api_config.NODE_ID)
             + "' AND (`node_bandwidth`<`node_bandwidth_limit` OR `node_bandwidth_limit`=0)"
         )
